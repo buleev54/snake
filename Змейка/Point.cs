@@ -12,6 +12,11 @@ namespace Змейка
         public int y;
         public char sym;
 
+        public Point()
+        {
+            Console.WriteLine("создаем новую точку");
+        }
+
         public void Draw()
         {
             Console.SetCursorPosition(x, y);
