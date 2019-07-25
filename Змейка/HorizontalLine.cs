@@ -10,15 +10,15 @@ namespace Змейка
     {
         List<Point> pList;
 
-        public HorizontalLine()  // коснтруктор, который будет вызываться присоздании линий
+        public HorizontalLine(int xLeft, int xRight, int y, char sym)  // коснтруктор, который будет вызываться присоздании линий
         {
             pList = new List<Point>();
-            Point p1 = new Point(4, 4, '*');  //это лдля примера
-            Point p2 = new Point(5, 4, '*');
-            Point p3 = new Point(6, 4, '*');
-            pList.Add(p1); //добавлячем все эти точки в список
-            pList.Add(p2);
-            pList.Add(p3);
+            for (int x = xLeft; x <= xRight; x++)
+            {
+                Point p = new Point(x, y, sym);
+                pList.Add(p);
+            }
+            
         }
 
         public void Drow()// метод вызова этих точек на экран

@@ -19,7 +19,7 @@ namespace Змейка
             Point p3 = new Point(10,15,'&');           
             p3.Draw();
 
-            HorizontalLine line = new HorizontalLine(); //создаем новую линию
+            HorizontalLine line = new HorizontalLine(5,20,8,'+'); //создаем новую линию, слева 5, справа 20, в восьмой строке, символ +
             line.Drow();//выводим ее на экран
 
 
