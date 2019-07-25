@@ -18,7 +18,29 @@ namespace Змейка
 
             Point p3 = new Point(10,15,'&');           
             p3.Draw();
-            
+
+
+            List<int> numList = new List<int>();
+            numList.Add(0);
+            numList.Add(1);
+            numList.Add(2);
+
+            int x = numList[0];
+            int y = numList[1];
+            int z = numList[2];
+
+            foreach (int i in numList)
+            {
+                Console.WriteLine(i);
+            }
+
+            numList.RemoveAt(0);
+
+            List<Point> pList = new List<Point>();
+            pList.Add(p1);
+            pList.Add(p2);
+            pList.Add(p3);
+
 
 
 
