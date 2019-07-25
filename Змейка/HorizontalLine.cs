@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Змейка
 {
-    class HorizontalLine
-    {
-        List<Point> pList;
-
+    class HorizontalLine : Figura
+    {       
         public HorizontalLine(int xLeft, int xRight, int y, char sym)  // коснтруктор, который будет вызываться присоздании линий
         {
             pList = new List<Point>();
@@ -19,14 +17,6 @@ namespace Змейка
                 pList.Add(p);
             }
             
-        }
-
-        public void Drow()// метод вызова этих точек на экран
-        {
-            foreach (Point p in pList)
-            {
-                p.Draw();
-            }
-        }
+        }       
     }
 }

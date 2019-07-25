@@ -19,8 +19,8 @@ namespace Змейка
             HorizontalLine topLine = new HorizontalLine(0, 78, 0, '+');
             HorizontalLine bottomLine= new HorizontalLine(0, 78, 24, '+');
 
-            topLine.Drow();
-            bottomLine.Drow();
+            topLine.Drew();
+            bottomLine.Drew();
             leftLine.Drew();
             rightLine.Drew();
 
