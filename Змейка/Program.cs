@@ -9,21 +9,24 @@ namespace Змейка
     class Program
     {
         static void Main(string[] args)
-        {          
-            Point p1 = new Point(1,3,'*');       
-            p1.Draw();
+        {
+            Console.SetBufferSize(80, 25);
 
-            Point p2 = new Point(4,5,'#');
-            p2.Draw();
+            //отрисовка рамочки
 
-            Point p3 = new Point(10,15,'&');           
-            p3.Draw();
+            VerticalLine leftLine = new VerticalLine(0,24,0,'+');
+            VerticalLine rightLine = new VerticalLine(0, 24, 78, '+');
+            HorizontalLine topLine = new HorizontalLine(0, 78, 0, '+');
+            HorizontalLine bottomLine= new HorizontalLine(0, 78, 24, '+');
 
-            HorizontalLine line = new HorizontalLine(5,20,8,'+'); //создаем новую линию, слева 5, справа 20, в восьмой строке, символ +
-            line.Drow();//выводим ее на экран
+            topLine.Drow();
+            bottomLine.Drow();
+            leftLine.Drew();
+            rightLine.Drew();
 
-            VerticalLine line1 = new VerticalLine(7, 22, 5, '$');
-            line1.Drew();
+            //отрисовка точек
+            Point p = new Point(4, 5, '*');
+            p.Draw();
 
 
 
