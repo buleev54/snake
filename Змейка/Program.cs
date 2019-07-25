@@ -19,7 +19,6 @@ namespace Змейка
             Point p3 = new Point(10,15,'&');           
             p3.Draw();
 
-
             List<int> numList = new List<int>();
             numList.Add(0);
             numList.Add(1);
@@ -40,6 +39,26 @@ namespace Змейка
             pList.Add(p1);
             pList.Add(p2);
             pList.Add(p3);
+
+
+
+
+
+
+
+
+
+
+            /* List<char> charList = new List<char>();
+             charList.Add('*');
+             charList.Add('#');
+             charList.Add('&');
+             charList.Add('%');
+             foreach (char i in charList)
+             {
+                 Console.WriteLine(i);               
+             }*/
+
 
 
 
