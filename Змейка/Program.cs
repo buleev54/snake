@@ -16,11 +16,11 @@ namespace Змейка
 
             VerticalLine leftLine = new VerticalLine(0,24,0,'+');
             VerticalLine rightLine = new VerticalLine(0, 24, 78, '+');
-            HorizontalLine topLine = new HorizontalLine(0, 78, 0, '+');
-            HorizontalLine bottomLine= new HorizontalLine(0, 78, 24, '+');
+            HorizontalLine upLine = new HorizontalLine(0, 78, 0, '+');
+            HorizontalLine downLine= new HorizontalLine(0, 78, 24, '+');
 
-            topLine.Drew();
-            bottomLine.Drew();
+            upLine.Drew();
+            downLine.Drew();
             leftLine.Drew();
             rightLine.Drew();
 
