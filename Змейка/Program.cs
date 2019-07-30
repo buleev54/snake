@@ -44,22 +44,12 @@ namespace Змейка
                     else if (key.Key == ConsoleKey.UpArrow)
                         snake.direction = Direction.UP;
                 }
+
+                Thread.Sleep(100);
+                snake.Move();
             }
 
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
+            
 
 
 
