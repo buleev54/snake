@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Змейка
 {
-    class Direction
+    enum Direction
     {
+        LEFT,
+        RIGHT,
+        UP,
+        DOWN
     }
 }
