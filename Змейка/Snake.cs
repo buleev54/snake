@@ -24,20 +24,20 @@ namespace Змейка
         internal void Move()
         {
             Point tail = pList.First();
-            pList.Remove(tail);
+            pList.Remove(tail); //удаляет хвост
             Point head = GetNextPoint();
-            pList.Add(head);
+            pList.Add(head);//добавляеь голову
 
-            tail.Clear();
-            head.Draw();
+            tail.Clear();//стирает хвост
+            head.Draw();//выводит голову на экран
         }
 
         public Point GetNextPoint()
         {
-            Point head = pList.Last();
-            Point nextPoint = new Point(head);
-            nextPoint.Move(1, direction);
-            return nextPoint;
+            Point head = pList.Last();// текущая позиция головы из списка
+            Point nextPoint = new Point(head);//создаём новую точку, которая явл-ся копие головы
+            nextPoint.Move(1, direction);//смещает точку в голове на +1 по движению
+            return nextPoint; //возврат
         }
     }
 }
