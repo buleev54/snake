@@ -17,6 +17,6 @@ namespace Змейка
                 pList.Add(p);
             }
 
-        }       
+        }
     }
 }

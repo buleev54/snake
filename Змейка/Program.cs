@@ -14,10 +14,10 @@ namespace Змейка
 
             //отрисовка рамочки
 
-            VerticalLine leftLine = new VerticalLine(0,24,0,'+');
+            VerticalLine leftLine = new VerticalLine(0, 24, 0, '+');
             VerticalLine rightLine = new VerticalLine(0, 24, 78, '+');
             HorizontalLine upLine = new HorizontalLine(0, 78, 0, '+');
-            HorizontalLine downLine= new HorizontalLine(0, 78, 24, '+');
+            HorizontalLine downLine = new HorizontalLine(0, 78, 24, '+');
 
             upLine.Drew();
             downLine.Drew();

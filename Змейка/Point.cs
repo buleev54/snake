@@ -13,7 +13,7 @@ namespace Змейка
         public char sym;
 
         public Point()//конструктор
-        {           
+        {
         }
 
         public Point(int _x, int _y, char _sym) //конструктор для создания точек
@@ -29,6 +29,7 @@ namespace Змейка
             y = p.y;
             sym = p.sym;
         }
+
         public void Move(int offset, Direction direction)
         {
             if (direction == Direction.RIGHT)

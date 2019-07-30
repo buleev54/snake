@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Змейка
 {
     class HorizontalLine : Figura
-    {       
+    {
         public HorizontalLine(int xLeft, int xRight, int y, char sym)  // коснтруктор, который будет вызываться присоздании линий
         {
             pList = new List<Point>();
@@ -16,7 +16,7 @@ namespace Змейка
                 Point p = new Point(x, y, sym);
                 pList.Add(p);
             }
-            
-        }       
+
+        }
     }
 }
