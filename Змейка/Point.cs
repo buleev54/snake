@@ -29,7 +29,7 @@ namespace Змейка
             y = p.y;
             sym = p.sym;
         }
-            public void Move(int offset, Direction direction)
+        public void Move(int offset, Direction direction)
         {
             if (direction == Direction.RIGHT)
             {
