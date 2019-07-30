@@ -34,15 +34,8 @@ namespace Змейка
             {
                 if (Console.KeyAvailable) //проверка, была ли нажата клавиша с прошлого раза, с прошлого витка цикла
                 {
-                    ConsoleKeyInfo key = Console.ReadKey();//получаем значение этой клавиши
-                    if (key.Key == ConsoleKey.LeftArrow)//если клавиша нажата влево
-                        snake.direction = Direction.LEFT;//то змейка движется влево
-                    else if (key.Key == ConsoleKey.RightArrow)
-                        snake.direction = Direction.RIGHT;
-                    else if (key.Key == ConsoleKey.DownArrow)
-                        snake.direction = Direction.DOWN;
-                    else if (key.Key == ConsoleKey.UpArrow)
-                        snake.direction = Direction.UP;
+                    ConsoleKeyInfo key = Console.ReadKey();// нажатие клавиши извне
+                    snake.HandleKey(key.Key);
                 }
 
                 Thread.Sleep(100);

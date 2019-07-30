@@ -8,7 +8,7 @@ namespace Змейка
 {
     class Snake : Figura
     {
-        public Direction direction;//направление змейки
+        Direction direction;//направление змейки
         public Snake(Point tail, int length, Direction _direction)
         {
             direction = _direction;
@@ -38,6 +38,18 @@ namespace Змейка
             Point nextPoint = new Point(head);//создаём новую точку, которая явл-ся копие головы
             nextPoint.Move(1, direction);//смещает точку в голове на +1 по движению
             return nextPoint; //возврат
+        }
+
+        public void HandleKey(ConsoleKey key)
+        {
+            if (key == ConsoleKey.LeftArrow)//если клавиша нажата влево
+                direction = Direction.LEFT;//то змейка движется влево
+            else if (key == ConsoleKey.RightArrow)
+                direction = Direction.RIGHT;
+            else if (key == ConsoleKey.DownArrow)
+                direction = Direction.DOWN;
+            else if (key == ConsoleKey.UpArrow)
+                direction = Direction.UP;
         }
     }
 }
