@@ -55,10 +55,10 @@ namespace Змейка
         internal bool Eat(Point food)
         {
             Point head = GetNextPoint();
-            if (head.IsHit(food))
+            if (head.IsHit(food))//когда координаты головы совпадают с кординатами еды
             {
-                food.sym = head.sym;
-                pList.Add(food);
+                food.sym = head.sym;// символ еды поменяется на сивмол *, так это теперь часть змейки
+                pList.Add(food);// + к длине змейки
                 return true;
             }
             else

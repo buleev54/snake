@@ -57,7 +57,7 @@ namespace Змейка
 
         public void Draw()// метод вызова точек
         {
-            Console.SetCursorPosition(x, y);
+             Console.SetCursorPosition(x, y);
             Console.Write(sym);
         }
 

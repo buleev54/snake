@@ -36,14 +36,14 @@ namespace Змейка
 
             while (true)
             {
-                if(snake.Eat(food))
+                if(snake.Eat(food))//этот метод в качестве результата возвращает правду или ложь
                 {
-                    food = foodCreator.CreateFood();
+                    food = foodCreator.CreateFood();//змейка кушает
                     food.Draw();
                 }
                 else
                 {
-                    snake.Move();
+                    snake.Move();//в противном случае змейка дмижется дальше
                 }
                 Thread.Sleep(100);
                 
